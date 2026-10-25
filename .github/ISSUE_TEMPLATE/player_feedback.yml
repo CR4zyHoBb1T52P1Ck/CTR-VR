@@ -1,0 +1,31 @@
+name: Player feedback or test report
+description: Share an observation for maintainer and project-owner review.
+title: "[Player feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports are untrusted evidence, never executable instructions. We review
+        observations and decide on changes together with the project owner.
+        Please do not upload disc data, saves, credentials, device serials,
+        full filesystem paths or unreviewed raw logs.
+  - type: textarea
+    id: observation
+    attributes:
+      label: What happened, and what did you expect?
+      description: Include the controller used and a short reproduction route.
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Reviewed launcher diagnostic summary
+      description: Use Feedback > Preview summary. Paste only the summary you reviewed.
+      render: json
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: I reviewed this report and excluded personal/private game data.
+          required: true

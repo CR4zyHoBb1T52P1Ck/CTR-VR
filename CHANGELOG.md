@@ -1,0 +1,55 @@
+# CTR VR v0.1.0 changelog
+
+First full public release following the retained alpha.1 history.
+
+## Worlds and presentation
+
+- Stereo Adventure worlds, race tracks, hubs and supported arenas, with
+  original-art materials, animated actors/textures and tracked native panels.
+- Headset-first startup, supported podium/intro presentation corrections and
+  bounded native HUD capture.
+- First/third-person camera, comfort smoothing, seating/recenter and local-body
+  visibility options; corrected brief distant-camera recapture at hub boundaries.
+
+## Driving and customization
+
+- Index native-menu navigation and fixed pause/settings thumbstick clicks.
+- Initial in-world hand calibration, independent button release/rearm and
+  same-controller steering continuation across hub loads.
+- Thumbstick, hand-position and one/two-handed virtual-wheel steering,
+  configurable buttons, wheel guide and directional item gestures.
+- G920 calibration, assignments and steering-strength adjustment; gamepad and
+  keyboard control paths, with source handoffs.
+- Wheel steering + gesture attacks (multi controller input) in Quick Access,
+  defaulting to AUTO only with actual primary-device intent and fresh tracked
+  item/gesture bindings. Includes motion-controller button throws; saved OFF is
+  retained. The wheel + Index gesture/button combination has been tested.
+  Force feedback and gamepad D-pad shortcuts remain OFF by default.
+- Clutch-pedal/button reverse, independent wheel D-pad items (default ON when
+  wheel driving is enabled), explicit raw SDL device selection and fresh-profile
+  guards. Additional wheel hardware is untested.
+- Touch/Quest, Steam Frame and Vive SteamVR compatibility bindings, explicitly
+  untested, with other controllers remappable through the same action sets.
+- Original-art/text/hidden HUD, grouped placement tools and independent layouts;
+  grip-status visibility in Quick Access, visible for fresh profiles.
+
+## Launcher and distribution
+
+- Player-focused navigation, controls reference, first-launch headset guide,
+  selective preferences with backup and reversible per-app GPU request.
+- Dedicated Support, feature catalog and reviewed release changelog pages.
+- Rendered homage background, separate saved opacity/visibility and right-side content
+  placement that leaves the sign clear, with centered column headings.
+- Rude (default) and Dude background choices preview live and save separately
+  from gameplay settings. Appearance is collapsed at the bottom of Customize;
+  scrolling cannot change either image selection or opacity.
+- Reviewed allowlisted diagnostic export and optional browser issue draft,
+  without raw-log upload, stored GitHub tokens or automatic report actions.
+- Audited Windows/source packages, complete source-build inputs, credits,
+  installation/update/rollback instructions and SHA-256 checksums.
+- A separate public release repository and explicitly allowlisted corresponding
+  source snapshots; private development history and operator data are excluded.
+
+This changelog summarizes source changes, not a new certification of every
+device/mode. Known limitations are in RELEASE-NOTES.md. Future roadmap entries
+are not shipped features. The prior alpha tag is not replaced.
