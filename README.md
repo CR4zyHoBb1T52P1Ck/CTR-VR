@@ -2,7 +2,9 @@
 
 An unofficial Windows / SteamVR mod for Crash Team Racing: Turbocharged, with stereoscopic worlds, first-person driving, a customizable original-art HUD and one- or two-handed virtual-wheel controls.
 
-**v0.1.0 is the first full release.** Download the Windows package and complete matching source from [GitHub releases](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases). Read the [release notes](docs/RELEASE_v0.1.0.md), [changelog](docs/CHANGELOG_v0.1.0.md) and [player guide](docs/DESKTOP_LAUNCHER.md) for this release.
+**v0.1.1 is the day-one patch.** Download the [Windows package and complete matching source](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/tag/v0.1.1). Read the [patch notes](docs/RELEASE_v0.1.1.md), [changelog](docs/CHANGELOG_v0.1.1.md) and [Quest PC/SteamVR guide](docs/QUEST_PC_VR.md). The patch fixes a reproduced fresh-install config conflict that could keep gameplay on a tracked flat panel, and preserves virtual-wheel steering when one of two gripping hands briefly loses tracking. Physical Quest validation remains pending.
+
+v0.1.0 remains available as the preserved original release. Stereo character/garage and model-viewer experiments are on hold and excluded from this patch.
 
 ## Play your way
 
@@ -21,7 +23,7 @@ Use the versioned Windows ZIP in a **new writable folder**, keep all files toget
 
 Index right thumbstick **click** is Start/pause; left thumbstick **click** pauses and opens VR settings. Quick Access has hand calibration, grip-status visibility and Wheel Steering + Gesture Attacks (multi controller input). The launcher Controls page lists tested and untested input paths. Clutch-pedal/button reverse is separate from wheel D-pad weapons. Select other raw SDL wheels under Input Devices; device changes require fresh calibration and mapping. Launcher Appearance is collapsed at the bottom of Customize and ignores mouse-wheel opacity changes. See the [controls reference](docs/RELEASE_v0.1.0.md#essential-controls).
 
-Back up the old folder with the game/launcher closed before updating. Move your own memory cards/settings selectively; keep new binaries, manifests, bindings and default configuration together. Follow the [update/rollback steps](docs/RELEASE_v0.1.0.md).
+Back up the old folder with the game/launcher closed before updating. Move your own memory cards/settings selectively; keep new binaries, manifests, bindings and default configuration together. Follow the [update/rollback steps](docs/RELEASE_v0.1.1.md).
 
 ## Build, credits and feedback
 

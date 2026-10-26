@@ -4,7 +4,7 @@ These are proposed release themes, without promised dates or version numbers.
 Features may ship separately or together when they share the same foundation.
 Each update can include focused fixes alongside its main feature.
 
-1. **Stereo character selection and showcase:** true actor depth in character/
+1. **Stereo character selection and showcase — on hold after preview findings:** true actor depth in character/
    kart selection, followed by a model viewer when ready.
 2. **Photo and free camera:** deliberate entry/exit, comfortable headset behavior,
    player-controlled capture and reliable return to gameplay controls.
