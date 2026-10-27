@@ -1,4 +1,8 @@
-# CTR VR v0.2.1 — Player launcher and creator guide
+# CTR VR v0.2.2 — Chase Camera & Picture-in-Picture
+
+Based on preserved v0.2.1, with owner-confirmed recording output. Read RELEASE-NOTES.md for full setup and limitations. Capture and PiP default OFF. In Launcher > Creator choose Chase camera, optionally Bottom-left/Top-left headset inset, enable capture and Save Creator settings. OBS Window Capture must select **CTR VR Capture**; the main game window/SteamVR mirror stays the headset view. The inset adds one image copy, not another scene render. Photo remains independent.144 Hz remains experimental; use90/native120 and keep OBS/AA active for comparison. Quick Access organization is planned for the next workblock.
+
+## Existing player launcher and creator guide
 
 An unofficial Windows / SteamVR mod for Crash Team Racing: Turbocharged. Supply your own compatible raw NTSC-U disc BIN. Read RELEASE-NOTES.md for the full features, compatibility and limitations. **144 Hz is experimental;90 Hz is the default.**
 

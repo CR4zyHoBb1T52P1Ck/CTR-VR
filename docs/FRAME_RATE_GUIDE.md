@@ -1,4 +1,4 @@
-# CTR VR v0.2.1 — headset refresh and native game timing
+# CTR VR v0.2.2 — headset refresh and native game timing
 
 **90 Hz is the default/reference. Native 120 has owner testing with OBS and in-game AA. 144 Hz remains experimental.** Normal game speed or a fast compositor does not establish full-rate world rendering.
 
