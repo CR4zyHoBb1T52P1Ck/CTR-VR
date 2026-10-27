@@ -1,6 +1,6 @@
 # Complete corresponding source
 
-Download [ctr-vr-v0.2.0-source.zip](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/download/v0.2.0/ctr-vr-v0.2.0-source.zip)
+Download [ctr-vr-v0.2.1-source.zip](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/download/v0.2.1/ctr-vr-v0.2.1-source.zip)
 from the same release as the Windows package. Verify its SHA-256 against the
 release's SHA256SUMS.txt, extract the entire archive, and read BUILD-SOURCE.md.
 
@@ -11,7 +11,7 @@ It contains no personal settings/saves or development Git history.
 
 This repository's Git tree contains player documentation and release records.
 GitHub's automatically generated "Source code (zip/tar.gz)" links archive only
-that documentation tree. Use the named **ctr-vr-v0.2.0-source.zip** release asset
+that documentation tree. Use the named **ctr-vr-v0.2.1-source.zip** release asset
 for the complete buildable source corresponding to the Windows download.
 
 Launcher/tooling: MIT. Native integration: GPL-3.0-or-later. Dependencies retain

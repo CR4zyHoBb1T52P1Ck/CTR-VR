@@ -18,9 +18,12 @@ Index is physically tested; Quest 3/3S verification is pending.
 1. Launch **CTR VR Launcher.exe** from the new extracted package and select Play.
 2. Movies, menus, loading and results may appear on a tracked screen. Load a
    playable single-player hub or race before assessing stereo gameplay.
-3. For this timing path, use 90 Hz in SteamVR where available. Keep the game's
-   frame-rate setting at 90, renderer at Native 3D and mirror mode off. The launcher
-   does not modify the headset's refresh rate or global VR settings.
+3. For v0.2.1, follow [the refresh guide](FRAME_RATE_GUIDE.md):80 uses Optimized
+   native,90 uses baseline and120 uses Native120/Optimized native.144 remains
+   experimental. Choose a rate actually exposed by your headset/connection,
+   save the matching profile with the game closed and restart after a Hz change.
+   Keep Native3D and native game Mirror mode off. The launcher does not alter
+   headset refresh or global VR settings;Quest physical verification is pending.
 4. If gameplay stays flat, record whether it is a SteamVR desktop/theater view or
    the mod's tracked panel. Note any fixed blocker hint. In Feedback, review the
    diagnostic summary and share only what you choose. Useful fields are gameRate,
