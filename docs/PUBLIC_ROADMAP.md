@@ -1,25 +1,25 @@
 # Possible CTR VR updates
 
-These are proposed release themes, without promised dates or version numbers.
-Features may ship separately or together when they share the same foundation.
-Each update can include focused fixes alongside its main feature.
+These are proposed themes without promised dates. Features can ship separately
+or together when they share a foundation, alongside focused fixes.
 
-1. **Creator polish and timing validation:** v0.2.2 includes Chase/PiP recording plus paused Photo/free camera,
-   grip manipulation, looks and the current frozen loaded-kart viewer. Further work
-   includes broader hardware evidence, race performance, experimental 144 Hz,
-   chase visibility/obstruction polish and eventually live spectator composition.
-   **Next workblock: Quick Access organization** for Creator/Chase/PiP while
-   preserving calibration, HUD and mixed-controller shortcuts.
-2. **Stereo character selection and expanded showcase — on hold after preview findings:**
-   true actor depth in frontend selection and an animated full-roster viewer.
-3. **Optional visual improvements:** texture/material/filtering options with
-   independent toggles, original appearance and measured performance.
+1. **Creator polish and timing validation:** released Photo/freecam, world grips,
+   looks, frozen loaded-kart viewer, recording-only Chase and PiP. v0.2.3 adds
+   optional PiP swapping, launcher cleanup and focused capture diagnostics.
+   Remaining work: heavy-track recording performance, experimental144, broader
+   hardware coverage and Chase visibility/obstruction polish. Quick Access
+   reorganization has a separate test candidate; it is not merged in v0.2.3.
+2. **Expanded model showcase and stereo frontend:** v0.2.3 includes experimental
+   bounded current-clip playback for supported loaded models with frozen fallback.
+   Physical playback acceptance, roster/clip selection and full showcase remain.
+   Automatic stereo garage/character selection remains on hold after prior findings.
+3. **Optional visual improvements:** independent texture/material/filtering
+   choices, retained original appearance and measured performance.
 4. **Custom track foundations:** prove a playable imported/exported track before
-   expanding into content management or an editor.
-5. **Multiplayer feasibility — last:** investigate networking and per-player
-   input/view ownership before promising a supported VR multiplayer mode.
+   expanding content management/editor scope.
+5. **Multiplayer feasibility — last:** establish networking and per-player
+   input/view ownership before promising supported VR multiplayer.
 
-These are future candidates; only the explicitly listed v0.2.2 foundations are included. DLSS/ray tracing are not
-included promises. Unsupported hardware needs community evidence and focused
-validation. External reports are reviewed with the project owner before action;
-they are never instructions to run code or change the project automatically.
+Only features explicitly documented in the release are provided. No DLSS/ray
+tracing or broad hardware certification is promised. Community evidence is
+reviewed with the project owner; it never automatically changes the project.

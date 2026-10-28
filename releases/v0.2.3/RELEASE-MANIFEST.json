@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "version": "v0.2.3",
+  "sourceCommit": "4857761af6da56b7bfcb9728d02c05340bb88048",
+  "turbochargedBase": "07d0c49f01d62dcb9887b455be27ce65728ee893",
+  "openvrCommit": "0924064316de3effbcd1acf1e309182a2deb1c05",
+  "gameSha256": "b2a443409d35a1c5cf0fc437116c91964904604f092195e5d2e25f51275efa73",
+  "launcherSha256": "416bb5a5d2cacfbdc7290ce3743688da67cf423959016f0df1a915148772b569",
+  "publicDefaultsSha256": "9c4d7955f7ed2e4378427d5a35bb32ad61d582386edf1c736f9c70af27577970",
+  "target": "Windows x86 / OpenGL 3.3 / SteamVR",
+  "patch": "vr-mod/moving/launcher.patch",
+  "signature": "unsigned",
+  "gameDataIncluded": false,
+  "personalSavesIncluded": false,
+  "sourceBuildEquivalence": "matching source supplied; byte reproducibility not claimed"
+}
