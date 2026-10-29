@@ -2,13 +2,15 @@
 
 An unofficial Windows / SteamVR mod for Crash Team Racing: Turbocharged, with stereoscopic worlds, first-person driving, a customizable original-art HUD and one- or two-handed virtual-wheel controls.
 
-**v0.2.3 — Creator Capture & Launcher Fixes** is available. **144 Hz remains EXPERIMENTAL.** Download the [Windows package and complete matching source](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/tag/v0.2.3), read the [release notes](docs/RELEASE_v0.2.3.md), [changelog](docs/CHANGELOG_v0.2.3.md) and [launcher guide](docs/DESKTOP_LAUNCHER.md).
+**v0.2.4 — PiP Menu Fix** is available. Download the [Windows package and complete matching source](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/tag/v0.2.4), read the [release notes](docs/RELEASE_v0.2.4.md), [changelog](docs/CHANGELOG_v0.2.4.md) and [launcher guide](docs/DESKTOP_LAUNCHER.md).
 
-This incremental update adds **Chase/headset PiP swapping**, applies pending Creator choices at Play, organizes Customize into **Current / Experimental / Legacy** options, and improves native90 capture setup/HUD reuse. Choose which view is large and the inset corner in Creator. OBS Window Capture must select **CTR VR Capture**; the main game/SteamVR mirror keeps the headset view. Capture/PiP default OFF, with saved choices retained.
+The in-headset PiP menu now immediately shows **Chase large / headset small** or **headset large / Chase small**. Open **VR Settings > Creator / Capture > Recording layout / PiP** with A or Right; use Left/Right or A to change the selected value. Resume gameplay to see the layout in **CTR VR Capture**. The headset view stays unchanged. OBS must capture that separate window. PiP menu operation and swapped recording output have owner confirmation.
 
-**90 Hz remains the default/reference. Native 80 is a fallback; native 120 has owner testing with OBS and AA. Heavy tracks and Creator recording still dip. 144 Hz remains experimental.** The new diagnostics investigate remaining cost; this release does not claim locked90/120/144 performance. Follow the [refresh guide](docs/FRAME_RATE_GUIDE.md) and keep the same profile when comparing runs.
+Feedback also selects newly arrived sessions on refresh and shows local session time, measured headset/native rate and a short report ID. Full reviewed JSON, optional OBS/video observations and compact issue drafts help compare runs without automatic uploads or render-loop logging.
 
-Photo/freecam, filters, grip manipulation and the frozen loaded-kart viewer remain. Supported models can try **experimental current-clip animation** in the viewer (V play/pause, N restart), with frozen fallback; physical animation acceptance is pending. This is not a full-roster viewer or automatic stereo garage. Quick Access reorganization remains a separate test candidate and is not merged here.
+**90 Hz remains the default/reference. Native 80 is a fallback; native 120 has owner testing with OBS and AA. Heavy tracks and Creator recording still dip. 144 Hz remains EXPERIMENTAL.** This menu fix does not claim locked performance across all workloads. Follow the [refresh guide](docs/FRAME_RATE_GUIDE.md); compare the same track, race mode, capture view, OBS and AA settings.
+
+Photo/freecam, filters, grip manipulation, the frozen loaded-kart viewer and all earlier Creator/input features remain. Supported models can try experimental current-clip viewer animation with frozen fallback; full-roster animation and automatic stereo garage selection remain future work. See the [previous feature release](docs/RELEASE_v0.2.3.md) for the retained feature details.
 
 ## Play your way
 
@@ -28,7 +30,7 @@ Use the versioned Windows ZIP in a **new writable folder**, keep all files toget
 
 Index right thumbstick **click** is Start/pause; left thumbstick **click** pauses and opens VR settings. Quick Access has hand calibration, grip-status visibility and Wheel Steering + Gesture Attacks (multi controller input). The launcher Controls page lists tested and untested input paths. Clutch-pedal/button reverse is separate from wheel D-pad weapons. Select other raw SDL wheels under Input Devices; device changes require fresh calibration and mapping. Launcher Appearance is collapsed at the bottom of Customize and ignores mouse-wheel opacity changes. See the [controls reference](docs/RELEASE_v0.1.0.md#essential-controls).
 
-Back up the old folder with the game/launcher closed before updating. Move your own memory cards/settings selectively; keep new binaries, manifests, bindings and default configuration together. Follow the [update/rollback steps](docs/RELEASE_v0.2.3.md#install-preserve-and-build).
+Back up the old folder with the game/launcher closed before updating. Move your own memory cards/settings selectively; keep new binaries, manifests, bindings and default configuration together. Follow the [update/rollback steps](docs/RELEASE_v0.2.4.md#install-preserve-and-build).
 
 ## Build, credits and feedback
 
@@ -38,7 +40,7 @@ Launcher/tooling uses MIT terms; the native integration is GPL-3.0-or-later. Dep
 
 Use Feedback to preview/export an allowlisted summary and deliberately open a GitHub issue draft. There is no automatic upload, token storage or report-to-code automation. External testing evidence is reviewed with the owner before acting; see [community feedback boundaries](docs/COMMUNITY_FEEDBACK.md).
 
-[Support Devon](https://ko-fi.com/devdoesdevthings) · [Project and issues](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR) · [Proposed updates](docs/PUBLIC_ROADMAP.md)
+[Support Devon](https://ko-fi.com/devdoesdevthings) Â· [Project and issues](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR) Â· [Proposed updates](docs/PUBLIC_ROADMAP.md)
 
 ## Release repository
 

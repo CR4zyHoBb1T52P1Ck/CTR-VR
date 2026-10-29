@@ -1,6 +1,6 @@
-# Build the CTR VR v0.2.2 source package
+# Build a complete CTR VR source package
 
-Extract the complete `ctr-vr-v0.2.2-source.zip` to a new short writable path.
+Extract the complete source ZIP supplied with the release you are reviewing to a new short writable path.
 The source root contains `Build-Source.ps1`, `SOURCE-REVISION.json`, `vr-mod/`
 and the already patched `turbocharged/` tree. Do not apply launcher.patch again.
 The pinned OpenVR headers/library/DLL and vendored SDL sources are included.

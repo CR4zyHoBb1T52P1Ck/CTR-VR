@@ -1,4 +1,24 @@
-# v0.2.3 — Creator Capture & Launcher Fixes
+# v0.2.4 â€” PiP Menu Fix
+
+- Show the selected Chase/headset large-view choice immediately in the VR PiP
+  menu; share capture-action classification between input and label formatting.
+- Allow A or Right to open the layout page and explain output after resume.
+- Select new Feedback sessions on refresh and display local time, measured
+  refresh/native rate and short report ID.
+- Add reviewed launch/exit context, explicit missing/conflicting receipt status,
+  optional OBS/video observations and compact issue drafts with manual full-JSON
+  attachment. No automatic uploads or render-loop logging.
+- Include offline evidence review, recovery and read-only audit/provenance tools
+  in the complete matching source.
+- Retain driving ownership, calibration, bindings, Photo, capture compositing,
+  AA and timing algorithms. Owner confirmed the menu fix and swapped output.
+
+Remaining: native 90/120 recording dips and demanding-race slowdowns; 144 Hz
+remains experimental. No general performance fix or broad hardware acceptance
+is claimed by this patch.
+
+
+# v0.2.3 â€” Creator Capture & Launcher Fixes
 
 - Add optional Chase/headset PiP view swapping at either supported inset corner.
 - Apply pending Creator preferences at Play; retain failed saves and separate
@@ -17,7 +37,7 @@ Known: native90 recording and demanding120 tracks may still dip.144 race
 performance is experimental. Animation playback physical acceptance is pending.
 
 
-# CTR VR v0.2.2 — Chase Camera & Picture-in-Picture
+# CTR VR v0.2.2 â€” Chase Camera & Picture-in-Picture
 
 - Add optional recording-only Chase with bounded smoothing, transition/teleport
   resets and its own full captured kart/driver/wheel geometry and sorting.
@@ -38,7 +58,7 @@ performance is experimental. Animation playback physical acceptance is pending.
 packaged separately from personal settings, saves, screenshots and retail data.
 
 
-# CTR VR v0.2.1 — Creator polish and native refresh modes
+# CTR VR v0.2.1 â€” Creator polish and native refresh modes
 
 **144 Hz remains experimental. 90 Hz is the default; native80/120 usage is documented in FRAME_RATE_GUIDE.md.**
 
@@ -56,7 +76,7 @@ packaged separately from personal settings, saves, screenshots and retail data.
 81 native,152 launcher and118 Python checks pass;two optional checks skip. Owner-tested creator/native120 foundations are distinguished from new portal/144 regression coverage. Quest/other hardware and full144 remain unverified. Full-roster animation, stereo frontend, smooth chase capture, custom tracks and multiplayer remain future work.
 
 
-# CTR VR v0.2.0 — The Streamer / Creator Update
+# CTR VR v0.2.0 â€” The Streamer / Creator Update
 
 Experimental Framerate Modes are in Testing. Clean installs retain the 90 Hz baseline.
 
@@ -75,7 +95,7 @@ Experimental Framerate Modes are in Testing. Clean installs retain the 90 Hz bas
 See release notes for physical-test limits, recorded stalls and experimental 72/80/120/144 Hz behavior. The stereo garage/model viewer and multiplayer remain out of scope.
 
 
-# v0.1.1 — day-one stereo-world and virtual-wheel fixes
+# v0.1.1 â€” day-one stereo-world and virtual-wheel fixes
 
 - Fix a fresh-install config conflict: `60fps=1` could override `frame_rate=90`,
   keeping supported gameplay on a tracked flat panel. Explicit frame rate now wins

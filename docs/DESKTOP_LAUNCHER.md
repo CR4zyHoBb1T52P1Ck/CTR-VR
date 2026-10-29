@@ -1,4 +1,4 @@
-# CTR VR v0.2.2 — Chase Camera & Picture-in-Picture
+# CTR VR v0.2.2 â€” Chase Camera & Picture-in-Picture
 
 Based on preserved v0.2.1, with owner-confirmed recording output. Read RELEASE-NOTES.md for full setup and limitations. Capture and PiP default OFF. In Launcher > Creator choose Chase camera, optionally Bottom-left/Top-left headset inset, enable capture and Save Creator settings. OBS Window Capture must select **CTR VR Capture**; the main game window/SteamVR mirror stays the headset view. The inset adds one image copy, not another scene render. Photo remains independent.144 Hz remains experimental; use90/native120 and keep OBS/AA active for comparison. Quick Access organization is planned for the next workblock.
 
@@ -45,9 +45,9 @@ Load a level and Pause; no pre-cache/capture toggle is required. VR Settings > C
 
 The gold-bordered exact2D PNG frame is the composition reference. P switches to stereo with a smaller viewfinder; L changes locked/head-follow. Camera mode, FOV, heading basis, filter/opacity and hardware controls remain labelled outside the PNG. Tracking stays live while gameplay freezes. One grip drags the world; two grips scale it. Orbit/free movement, height, distance, FOV and group visibility are bounded by captured geometry. The loaded-kart viewer shares these controls and full orbit for the current frozen kart/driver/wheel sprites; it is not an animated/full-roster viewer.
 
-**Filter controls:**left Index thumbpad top/bottom = opacity +10%/−10%;right top/bottom = next/previous look. Press an edge; touch/hold does not repeat. Keyboard:left bracket[previous,right bracket]next,comma−10%,period+10%,letter O Original. Seven looks save independently of camera/visibility. Original/0% bypasses effects. Photo stereo/viewfinder/PNG share colour processing; gameplay/live recording remain unchanged. Custom SteamVR Photo bindings may need the optional pad actions assigned; no binding is reset automatically.
+**Filter controls:**left Index thumbpad top/bottom = opacity +10%/âˆ’10%;right top/bottom = next/previous look. Press an edge; touch/hold does not repeat. Keyboard:left bracket[previous,right bracket]next,commaâˆ’10%,period+10%,letter O Original. Seven looks save independently of camera/visibility. Original/0% bypasses effects. Photo stereo/viewfinder/PNG share colour processing; gameplay/live recording remain unchanged. Custom SteamVR Photo bindings may need the optional pad actions assigned; no binding is reset automatically.
 
-**Camera controls:**sticks or arrows/right mouse look;Tab/Enter orbit/free;WASD free movement;Q/E height;PgUp/PgDn distance;minus/equals FOV;Backspace/default Alt+F5 reset.1–5 toggle body, wheels, other objects, scenery and sky. H/controller Help expands instructions. Index/Touch right trigger, Xbox X, configured wheel PNG button or Space/F12/default Alt+F12 saves PNG.
+**Camera controls:**sticks or arrows/right mouse look;Tab/Enter orbit/free;WASD free movement;Q/E height;PgUp/PgDn distance;minus/equals FOV;Backspace/default Alt+F5 reset.1â€“5 toggle body, wheels, other objects, scenery and sky. H/controller Help expands instructions. Index/Touch right trigger, Xbox X, configured wheel PNG button or Space/F12/default Alt+F12 saves PNG.
 
 PNGs save in this installation's **game/captures**. **Creator > Open screenshots** opens it. Escape/default Alt+F7/controller Return leaves Photo **still paused**;Resume deliberately. Held exit commands are quarantined individually, so grips do not require waking another controller. Portal menus now use a similar per-command entry rule.
 
@@ -60,3 +60,11 @@ Feedback previews numeric evidence and optionally opens an issue draft. It does 
 Physical coverage is strongest on Index/G920/Xbox/keyboard;Quest/Touch/Frame/Vive and other devices remain untested Windows SteamVR paths. Native120 and Photo looks have owner acceptance;new portal/144 refinements have build/regression coverage and await physical comparison. The intermittent hub stall is not established globally fixed. Full144 rendering, smooth chase/live spectator, animated full-roster viewing, stereo frontend, custom tracks and multiplayer remain incomplete/future work.
 
 Use the named matching source ZIP with included licenses/credits to build. GitHub automatic source archives contain public documentation only. No game,SteamVR,OBS or motor is launched by extraction/build scripts.
+
+## v0.2.4 PiP menu and Feedback refinements
+
+VR Settings > Creator / Capture > Recording layout / PiP opens with A or Right. Up/Down selects; Left/Right or A adjusts. The selected large/small view is shown immediately. In Chase, choose a visible inset corner and resume gameplay to inspect CTR VR Capture; paused output uses the existing panel path. PiP does not replace the headset camera.
+
+Feedback selects a newly arrived run on refresh; an intentional historical selection remains when the list is unchanged. Session times are local. Preview the measured headset/native rate and short report ID before exporting another run. Declare OBS if known and optionally add a video-relative incident timestamp. Export full JSON; the issue button opens a compact draft only, with manual attachment and no automatic upload.
+
+The loaded-model viewer also retains experimental current-clip playback for supported models with frozen fallback. Photo, calibration and driving ownership are retained. 144 Hz rendering and demanding 90/120 Hz recording workloads remain under investigation; this patch is not a general performance fix.
