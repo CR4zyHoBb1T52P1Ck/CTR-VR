@@ -13,17 +13,18 @@ also supply the headset; this mod does not install or configure transport softwa
 The v0.1.1 patch fixes a headset-independent config bug in the v0.1.0 ZIP:
 the legacy 60 FPS key could override the intended 90 FPS rate and prevent stereo
 world entry. This does not prove that every Quest-specific issue is resolved.
-Index is physically tested; Quest 3/3S verification is pending.
+Index is developer-tested. Quest 3 PC/SteamVR compatibility has community reports
+relayed by the maintainer; Quest 3S and broad Touch/gesture coverage remain unverified.
 
 1. Launch **CTR VR Launcher.exe** from the new extracted package and select Play.
 2. Movies, menus, loading and results may appear on a tracked screen. Load a
    playable single-player hub or race before assessing stereo gameplay.
-3. For v0.2.1, follow [the refresh guide](FRAME_RATE_GUIDE.md):80 uses Optimized
-   native,90 uses baseline and120 uses Native120/Optimized native.144 remains
+3. For v0.2.5, follow [the refresh guide](FRAME_RATE_GUIDE.md):80/90/120 use Current
+   Native, or90 uses the matching90Hz reference.144 remains
    experimental. Choose a rate actually exposed by your headset/connection,
    save the matching profile with the game closed and restart after a Hz change.
-   Keep Native3D and native game Mirror mode off. The launcher does not alter
-   headset refresh or global VR settings;Quest physical verification is pending.
+   Keep Native 3D and native game Mirror mode off. The launcher does not alter
+   headset refresh or global VR settings; transport/controller coverage remains limited.
 4. If gameplay stays flat, record whether it is a SteamVR desktop/theater view or
    the mod's tracked panel. Note any fixed blocker hint. In Feedback, review the
    diagnostic summary and share only what you choose. Useful fields are gameRate,

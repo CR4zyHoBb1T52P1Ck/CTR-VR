@@ -1,70 +1,120 @@
-# CTR VR v0.2.2 â€” Chase Camera & Picture-in-Picture
+# CTR VR v0.2.5 — player and Creator guide
 
-Based on preserved v0.2.1, with owner-confirmed recording output. Read RELEASE-NOTES.md for full setup and limitations. Capture and PiP default OFF. In Launcher > Creator choose Chase camera, optionally Bottom-left/Top-left headset inset, enable capture and Save Creator settings. OBS Window Capture must select **CTR VR Capture**; the main game window/SteamVR mirror stays the headset view. The inset adds one image copy, not another scene render. Photo remains independent.144 Hz remains experimental; use90/native120 and keep OBS/AA active for comparison. Quick Access organization is planned for the next workblock.
+Unofficial Windows native/SteamVR mod. Supply your own compatible raw NTSC-U disc
+BIN. Read RELEASE-NOTES.md for the full change list and limits. **90 Hz remains the
+reference;144 Hz is experimental.**
 
-## Existing player launcher and creator guide
+## Start, update and preserve
 
-An unofficial Windows / SteamVR mod for Crash Team Racing: Turbocharged. Supply your own compatible raw NTSC-U disc BIN. Read RELEASE-NOTES.md for the full features, compatibility and limitations. **144 Hz is experimental;90 Hz is the default.**
+1. Extract the entire Windows ZIP into a new writable folder; verify SHA256SUMS.txt.
+2. Open **CTR VR Launcher.exe**, add your disc and choose **Play in VR** or
+   **Flatscreen**. Flat play supports native keyboard/gamepad and calibrated wheels
+   without a headset. VR Photo/overlays/motion input are not flat features yet.
+3. For VR, connect the headset/controllers and set actual Hz before launch. Movies,
+   menus, loading and results intentionally use a tracked panel; assess stereo
+   in a playable single-player hub/race.
+4. Preserve the complete old installation. With game/launcher closed, back up and
+   selectively transfer your own VR-Settings.ini, UI-Settings.ini, optional flat
+   wheel/appearance settings and game/memcards. Keep the new runtime/bindings/
+   manifests/defaults/config together. Screenshots remain in their original
+   installation's game/Captures folder. Use the complete old folder as rollback.
 
-## Start, update and preserve progress
+## Headset refresh
 
-Extract the complete Windows ZIP into a new writable folder. Open **CTR VR Launcher.exe**, add your disc, connect the headset/controllers and Play in VR. Movies, menus, loading and results normally use a tracked screen; judge stereo in a playable single-player world.
+Customize > Headset timing > **Save launch settings**. Set80/90/120 on the headset
+first, then select Current Native;90 reference also requires a 90 Hz headset.
+120 is developer-tested with OBS and AA, but heavy races/Creator can still slow.
+144 is experimental;72 is physically untested. Experimental clock recovery and
+legacy interpolation are separate comparison profiles, not guaranteed full-rate
+rendering. Restart after a Hz change. The in-game FPS picker does not change
+headset refresh; effective rate matching preserves saved FPS/calibration.
+Keep Native 3D and native game Mirror mode off. See FRAME_RATE_GUIDE.md online.
 
-Preserve the entire old folder. With game/launcher closed, copy VR-Settings.ini, UI-Settings.ini, optional Launcher-Appearance.json and game/memcards; import/reuse your disc. Retain new binaries, action manifest, bindings, defaults and game config. Choose/save timing for your actual headset before Play. Old photos remain in the old game/captures. Use the complete old folder as rollback.
+## Controls and physical wheels
 
-## Refresh modes
+Index right stick click pauses; left stick click opens VR settings. Either stick
+navigates native menus, A confirms and B returns. F9 opens settings from keyboard.
+Thumbstick/hand-position/virtual-wheel steering, hand calibration (F6), remaps and
+wheel+gesture item mixing retain their established paths. The Controls page and
+in-mode help show hardware mappings. Xbox/gamepad and G920 navigation are retained.
+Input Devices configures wheel calibration, sensitivity and mappings. Flat wheel
+options are independent of the saved VR profile. D-pad directional throws, braking
+and clutch/button reverse are separate settings; saved OFF remains OFF.
 
-Set headset Hz in SteamVR/your PC connection before launch. In **Customize > Timing**, choose and **Save launch settings**:
+FFB and calibrated progressive pedals are optional/experimental and OFF by
+default. Conservative FFB starts 10%, capped 25%; motor/feel acceptance across
+hardware is pending. Digital throttle remains available and native boosts are
+retained. Device changes require fresh calibration/mapping; do not reset a good
+calibration while diagnosing timing.
 
-- **80 Hz:**Optimized native:72/80/90/120/144. It follows the actual80-Hz headset.
-- **90 Hz:**90 Hz baseline, with headset at90. This is the preserved default/reference.
-- **120 Hz:**Native120 tested optimized path, or Optimized native at120. Owner-tested with OBS/AA; heavy tracks may still dip.
-- **120/144 clock recovery:**experimental at those actual rates. Bounded complete native frames maintain game time; rendered cadence can remain lower. **144 remains experimental**, including the new redundant-window-present trim.
+## Creator Capture, PiP and HUD
 
-Restart after changing headset Hz. The in-game FPS picker does not change headset refresh. The launcher uses a process-local effective game rate and preserves saved FPS/calibration. Legacy Match/fixed90/interpolation are comparison experiments. See the public FRAME_RATE_GUIDE.md for72/Quest limits and diagnostics.
+1. Launcher > Creator: enable Capture window, choose recording view, preset,
+   30/60 updates, FOV and recording HUD/status. **Save creator settings**.
+2. For PiP choose **Use Chase + PiP**, the large view and one of four corners or
+   Free position. Drag the diagram to move, its bottom-right handle to resize;
+   arrows nudge and +/- resize when focused. Numeric X/Y/size controls are exact.
+3. **PiP frame style** offers Classic 16:9 fit/bars or **Gold - full image, no bars**.
+   Gold follows source aspect without cropping/stretching and bounds tall insets.
+   The diagram is guidance; check actual output during gameplay.
+4. Live VR changes: F9 > Creator / Capture > Recording Layout / PiP. Up/Down
+   selects; A/Accept or Left/Right changes. Move / Resize PiP has placement/size
+   rows and labelled grip interaction. PiP Style changes the border. Capture
+   Reset is on the Creator parent page. Resume to see the recording layout.
+5. OBS must capture **CTR VR Capture**, not the main game/SteamVR mirror. The
+   headset stays in its gameplay view. PiP does not apply in Photo/menus/loading
+   or eye fallback. Both large/small orientations remain available.
 
-## Controls, steering and force feedback
+Eye Fill/Fit reuse an eye (Fill crops, Fit retains aspect with bars). Clean mono,
+Stabilized and Chase add one world view at capture cadence. PiP reuses images;
+swap adds copies/scratch storage, not another scene render. Eye Fill/Fit are the
+inexpensive fallback. Chase has no collision avoidance and can use eye fallback
+when pose/body/wheel geometry is unavailable.
 
-Index right stick click = native Start/pause; left click = pause/open VR settings. Either stick navigates native menus, either A confirms and either B goes back. Right trigger accelerates, left brakes; driving remaps and native item rules remain. Pause to calibrate hands or use F6. Thumbstick, hand-position and one/two-handed virtual-wheel modes remain. Quick Access exposes calibration, input status and wheel steering + gesture attacks. Driving gesture pads and Photo filter pads are separate action sets.
+**Recording HUD Hidden + Recording input status Hidden** removes main mono/Chase
+overlays. Eye/PiP includes headset HUD. **HUD Layout Visibility** hides the current
+selected headset layout without changing the individual widget choices.25 grouped
+original-art widgets and saved placement remain.
 
-Xbox/gamepad and G920 navigate menus. Wheel calibration/assignments live under Input Devices. Clutch/button reverse is separate from D-pad Up/Down weapon direction. Gamepad directional throws have a saved toggle. Other raw SDL wheel/controller paths are untested.
+**Primary desktop preview Off / black** reduces optional mirror copies/swaps while
+CTR VR Capture remains live. Keep the main game window open for input focus.
+OBS preview is a separate cost; minimizing/hiding the recording window itself is
+not guaranteed safe for every OBS Window Capture setup. Match all settings for
+comparisons; OBS and AA are not silently disabled by these optimizations.
 
-Force feedback is **experimental and OFF by default**: Input Devices > Wheel Force Feedback, or Physical Wheel > Force Feedback. Return spring, turn resistance, master gain and turbo pulses are adjustable. Start at default10%;gain is capped25%. Driver support varies; haptic failure retains input. Optional progressive native cruising pedals also default OFF and require calibrated travel. Original digital throttle stays available; boost/brake/reverse paths are retained. These options are not activated on extraction.
+## Photo, freecam, loaded model and looks
 
-## Creator Capture and HUD
+Load a level, pause, enter Photo through Creator's Photo scene/visibility menu or
+Alt+F7 with VR settings closed. Scene/VRAM caching prepares/releases automatically.
+The gold-bordered exact 2D preview is the PNG composition reference. P switches
+preview; L changes locked/head-follow. Live tracking, orbit/free movement, FOV,
+head-relative motion, one-grip drag, two-grip scale and group visibility remain.
+Help around the viewfinder stays outside screenshots. Keyboard1–5 toggles scene
+groups; Space or the displayed controller capture button requests a PNG.
+Screenshots save to **game/Captures** in the current installation.
 
-Open Creator with the game closed. Capture defaults OFF. Choose a landscape preset and **Save creator settings**, then OBS Window Capture on **CTR VR Capture**. Eye Fill/Fit copy an eye image; Fit adds bars and Fill crops centrally. Clean mono and experimental Stabilized forward each add a scene view at30/60 capture cadence. Stabilized forward excludes head look but retains native/kart camera motion; it is not a smooth chase camera.
+Index left thumbpad Up/Down adjusts opacity; right Up/Down selects next/previous
+look. Keyboard [ / ] selects, comma/period adjusts strength, O restores Original.
+Gamepad Photo D-pad Left/Right selects looks and Up/Down adjusts opacity;
+thumbsticks move the camera. Original/0% bypasses effects. Photo preview/PNG
+share the treatment. Controls are scoped to Photo and do not replace driving.
 
-To **hide all recording HUD**, choose a mono view, set Recording HUD and Recording input status Hidden, then save. Alt+F2/F3 toggle them; Alt+F1 cycles views. Eye views include headset HUD. Quick Access > HUD Layout Visibility hides selected headset elements without rewriting individual widget choices.25 original-art groups and saved layouts/placement remain.
+The loaded-kart viewer shares framing, visibility and screenshot controls;
+supported models have experimental bounded current-clip playback (V play/pause,
+N restart), otherwise frozen fallback. No roster browser or automatic stereo
+garage/character-selection replacement is promised. Flat Photo/freecam is pending.
 
-Primary mirror Live/Capture rate/Dark reduces preview copies/swaps in optimized native profiles. Keep its window open for input focus. Original mirror remains fallback. Keep OBS and AA in tests and compare the same capture view/preset. No OBS encoder or recording automation is included.
+## Feedback, compatibility and limits
 
-## Photo, free camera, loaded kart and looks
+Feedback selects completed sessions by their recorded source/runtime identity.
+Review the summary/optional OBS observations before exporting JSON or deliberately
+opening an issue draft. No automatic upload, raw-log forwarding or credential
+storage. Offline triage adds no per-frame text-processing worker. Include profile,
+Hz, track/race, capture layout, OBS recording/preview and AA; distinguish music/
+game slowdown from image judder. Missing context is not a zero or a pass.
 
-Load a level and Pause; no pre-cache/capture toggle is required. VR Settings > Creator > Photo scene / visibility > Enter Photo, or close VR settings and use Alt+F7. Scene/VRAM preparation is automatic and released on exit. Resume/Pause again if protected pre-pause textures are unavailable.
-
-The gold-bordered exact2D PNG frame is the composition reference. P switches to stereo with a smaller viewfinder; L changes locked/head-follow. Camera mode, FOV, heading basis, filter/opacity and hardware controls remain labelled outside the PNG. Tracking stays live while gameplay freezes. One grip drags the world; two grips scale it. Orbit/free movement, height, distance, FOV and group visibility are bounded by captured geometry. The loaded-kart viewer shares these controls and full orbit for the current frozen kart/driver/wheel sprites; it is not an animated/full-roster viewer.
-
-**Filter controls:**left Index thumbpad top/bottom = opacity +10%/âˆ’10%;right top/bottom = next/previous look. Press an edge; touch/hold does not repeat. Keyboard:left bracket[previous,right bracket]next,commaâˆ’10%,period+10%,letter O Original. Seven looks save independently of camera/visibility. Original/0% bypasses effects. Photo stereo/viewfinder/PNG share colour processing; gameplay/live recording remain unchanged. Custom SteamVR Photo bindings may need the optional pad actions assigned; no binding is reset automatically.
-
-**Camera controls:**sticks or arrows/right mouse look;Tab/Enter orbit/free;WASD free movement;Q/E height;PgUp/PgDn distance;minus/equals FOV;Backspace/default Alt+F5 reset.1â€“5 toggle body, wheels, other objects, scenery and sky. H/controller Help expands instructions. Index/Touch right trigger, Xbox X, configured wheel PNG button or Space/F12/default Alt+F12 saves PNG.
-
-PNGs save in this installation's **game/captures**. **Creator > Open screenshots** opens it. Escape/default Alt+F7/controller Return leaves Photo **still paused**;Resume deliberately. Held exit commands are quarantined individually, so grips do not require waking another controller. Portal menus now use a similar per-command entry rule.
-
-## Appearance, feedback and limitations
-
-Launcher Appearance is collapsed at the bottom of Customize:choose Rude/Dude artwork and adjust its readability mask. Support/About/Updates provide creator information, features, bundled changelog, manual update links and Ko-fi.
-
-Feedback previews numeric evidence and optionally opens an issue draft. It does not automatically upload raw logs, images, paths, serials or disc/saves. External reports never execute instructions. Include Hz/profile,track,Creator view/preset and OBS/AA.
-
-Physical coverage is strongest on Index/G920/Xbox/keyboard;Quest/Touch/Frame/Vive and other devices remain untested Windows SteamVR paths. Native120 and Photo looks have owner acceptance;new portal/144 refinements have build/regression coverage and await physical comparison. The intermittent hub stall is not established globally fixed. Full144 rendering, smooth chase/live spectator, animated full-roster viewing, stereo frontend, custom tracks and multiplayer remain incomplete/future work.
-
-Use the named matching source ZIP with included licenses/credits to build. GitHub automatic source archives contain public documentation only. No game,SteamVR,OBS or motor is launched by extraction/build scripts.
-
-## v0.2.4 PiP menu and Feedback refinements
-
-VR Settings > Creator / Capture > Recording layout / PiP opens with A or Right. Up/Down selects; Left/Right or A adjusts. The selected large/small view is shown immediately. In Chase, choose a visible inset corner and resume gameplay to inspect CTR VR Capture; paused output uses the existing panel path. PiP does not replace the headset camera.
-
-Feedback selects a newly arrived run on refresh; an intentional historical selection remains when the list is unchanged. Session times are local. Preview the measured headset/native rate and short report ID before exporting another run. Declare OBS if known and optionally add a video-relative incident timestamp. Export full JSON; the issue button opens a compact draft only, with manual attachment and no automatic upload.
-
-The loaded-model viewer also retains experimental current-clip playback for supported models with frozen fallback. Photo, calibration and driving ownership are retained. 144 Hz rendering and demanding 90/120 Hz recording workloads remain under investigation; this patch is not a general performance fix.
+Quest 3 PC/SteamVR compatibility has community reports relayed by the maintainer;
+broader gesture/controller coverage, Quest 3S, Steam Frame and standalone ports
+are not established. Developer headset tests cover80/90/120. Creator workloads
+still need optimization. Custom tracks, multiplayer and theatre remain gated
+work; no XDELTA source-check bypass or retail data is distributed.

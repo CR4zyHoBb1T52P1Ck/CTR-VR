@@ -1,4 +1,4 @@
-# CTR VR v0.2.3 â€” headset refresh and native game timing
+# CTR VR v0.2.5 — headset refresh and native game timing
 
 **90 Hz is the default/reference. Native 80/90/120 have owner testing; 120 was
 tested with OBS and in-game AA. 144 Hz remains experimental.** Heavy tracks and
@@ -21,7 +21,7 @@ Creator capture can still dip. Correct game speed does not prove full-rate image
 | --- | --- | --- |
 |80 Hz|Current: Native|Earlier owner-tested lower-load fallback where available.|
 |90 Hz|Current: 90 Hz reference|Preserved default/reference. Set the headset to 90 too.|
-|90 Hz|Current: Native|Maintained native optimizations; retain this when comparing a previous native90 run.|
+|90 Hz|Current: Native|Maintained native optimizations; retain this when comparing a previous native 90 run.|
 |120 Hz|Current: Native|Owner-tested with OBS + AA. Heavy races/recording can still slow.|
 |120/144 Hz under load|Experimental: Native clock recovery|Bounded native steps preserve game time; visible rendering can remain lower.|
 |144 Hz|Native or clock recovery|Experimental. Full144 race rendering is not established. Return to120/90 if cadence is poor.|
@@ -41,12 +41,11 @@ native frames at 120/144 when needed. It can keep music/game speed near real tim
 while images repeat or reproject. These are different models; compare the same
 profile when evaluating only a Hz or capture-setting change.
 
-Early Match headset, Fixed90, 90+interpolation, dedicated native120 and dedicated
+Early Match headset, Fixed90, 90+interpolation, dedicated native 120 and dedicated
 native144 remain available for controlled comparisons. Interpolation has known
 judder/object-matching limits and is not the preferred native80/90/120 path.
 Mismatch/refresh-change guards require restart rather than changing physics
-silently. Quest and other headset paths still need physical verification through
-a compatible Windows SteamVR/OpenVR host; no standalone app is included.
+silently. Quest 3 PC/SteamVR compatibility is community-confirmed in reports relayed by the maintainer. This is distinct from broad controller/gesture coverage or standalone support, which remain pending. Developer headset testing covers80,90 and120 Hz; recording and Creator workloads still need optimization. Other headset/rate configurations require their own verification.
 
 ## Recording cost and diagnostics
 
@@ -58,16 +57,18 @@ Swapping PiP adds copies and a small scratch target. Primary mirror Capture rate
 or Dark reduces that optional preview's copies/swaps; keep the window open for
 keyboard focus. OBS preview is separate overhead, not another game simulation.
 
-The previous native90 capture setup/HUD optimization is active, but the latest
-short run still averaged 86.08 rendered/logic FPS. It does not prove a regression
-or improvement against longer runs. v0.2.3 adds presentation subphase counters to
-separate context entry, image copy/flush, window swap and context restoration.
-Do not add overlapping CPU scopes as independent frame-budget costs.
+Latest owner-approved corrected Cortex stress run: native 120/OBS recording and
+preview ON/AA/Chase+Gold PiP averaged113.464FPS/94.6% game clock,114/216 under-
+cadence windows. Earlier Gold N. Gin/Oxide runs averaged98.0%/96.8% with complete
+scenery in sampled footage. Different content/source makes these useful observed
+limits, not controlled per-edit gains or an all-track guarantee.144 stays experimental.
+Capture subphase counters separate context entry, copy/flush, swap and restoration;
+do not add overlapping scopes as independent frame-budget costs.
 
 Feedback meanLogicMilliFps/meanClockPermille describe simulation pace;
 meanAppMilliFps and renderUnderCadenceWindows describe rendered world cadence.
 Include visible judder and audio/game speed, not just the final FPS sample.
-Budgets are approximately 12.5 ms at80, 11.11 ms at90, 8.33 ms at120 and6.94 ms
+Budgets are approximately 12.5 ms at80, 11.11 ms at 90, 8.33 ms at120 and6.94 ms
 at144. Complete game timing can be healthy while rendering misses those budgets.
 
 The guarded144 pass can skip a redundant native window presentation in eligible
