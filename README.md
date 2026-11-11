@@ -4,10 +4,14 @@ An unofficial Windows native/SteamVR mod for Crash Team Racing: Turbocharged,
 with stereoscopic worlds, configurable driving controls, original-art HUD,
 Photo/freecam and Creator recording tools.
 
-**v0.3.0 - Theatre and Creator Studio** is available. Download the
-[Windows package and complete matching source](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/tag/v0.3.0),
-read the [release notes](docs/RELEASE_v0.3.0.md), [Theatre/Photo controls](docs/THEATRE_CONTROLS.md)
+**v0.3.1 - Theatre and Creator Studio** is available. Download the
+[Windows package and complete matching source](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/tag/v0.3.1),
+read the [release notes](docs/RELEASE_v0.3.1.md), [Theatre/Photo controls](docs/THEATRE_CONTROLS.md)
 and [launcher guide](docs/DESKTOP_LAUNCHER.md).
+
+The final defaults patch includes the owner-approved Kart-relative REC placement,
+verified in hubs and races. New installations receive it; existing saved layouts
+remain authoritative. [Build and artifact verification](releases/v0.3.1/BUILD-VERIFICATION.json).
 
 Record a race take, pause to save it, then open it in the launcher Theatre library.
 Film using free/player cameras, a desktop gamepad or the **head/hand-tracked PC VR
@@ -65,7 +69,7 @@ Use the versioned Windows ZIP in a **new writable folder**, keep all files toget
 
 Index right thumbstick **click** is Start/pause; left thumbstick **click** pauses and opens VR settings. Quick Access has hand calibration, grip-status visibility and Wheel Steering + Gesture Attacks (multi controller input). The launcher Controls page lists tested and untested input paths. Clutch-pedal/button reverse is separate from wheel D-pad weapons. Select other raw SDL wheels under Input Devices; device changes require fresh calibration and mapping. Launcher Appearance is collapsed at the bottom of Customize and ignores mouse-wheel opacity changes. See the [controls reference](docs/RELEASE_v0.1.0.md#essential-controls).
 
-Back up the old folder with the game/launcher closed before updating. Move your own memory cards/settings selectively; keep new binaries, manifests, bindings and default configuration together. Follow the [update/rollback steps](docs/RELEASE_v0.3.0.md#preserve-verify-and-build).
+Back up the old folder with the game/launcher closed before updating. Move your own memory cards/settings selectively; keep new binaries, manifests, bindings and default configuration together. Follow the [update/rollback steps](docs/RELEASE_v0.3.1.md#preserve-verify-and-build).
 
 ## Build, credits and feedback
 
@@ -75,7 +79,7 @@ Launcher/tooling uses MIT terms; the native integration is GPL-3.0-or-later. Dep
 
 Use Feedback to preview/export an allowlisted summary and deliberately open a GitHub issue draft. There is no automatic upload, token storage or report-to-code automation. External testing evidence is reviewed with the owner before acting; see [community feedback boundaries](docs/COMMUNITY_FEEDBACK.md).
 
-[Support Devon](https://ko-fi.com/devdoesdevthings) · [Project and issues](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR) · [Proposed updates](docs/PUBLIC_ROADMAP.md)
+[Support Devon](https://ko-fi.com/devdoesdevthings) Â· [Project and issues](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR) Â· [Proposed updates](docs/PUBLIC_ROADMAP.md)
 
 ## Release repository
 

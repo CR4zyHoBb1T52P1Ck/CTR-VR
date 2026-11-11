@@ -1,4 +1,4 @@
-# CTR VR - after v0.3.0
+# CTR VR - after v0.3.1
 
 Theatre/Creator Studio is now a public milestone: observed race takes, frozen
 scenes, desktop and PC-tracked filming, transport/ranges/bookmarks/shots, clean

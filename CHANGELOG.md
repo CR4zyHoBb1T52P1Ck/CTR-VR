@@ -1,5 +1,14 @@
 # Changelog
 
+# v0.3.1 - Final REC placement defaults
+
+- New installations now start with the owner-confirmed Kart-relative REC badge placement, visibility, distance, scale and orientation.
+- The saved layout is shared between hubs and races; both contexts passed owner acceptance of the frozen grip/trigger laser editor.
+- Existing saved layouts and personal settings take precedence. No profile, disc data, save or session log is distributed.
+- The exact accepted v0.3.0 game executable, controls, Photo and Theatre runtime are retained unchanged.
+- Updated full release overview, installation/update steps, controls and experimental-limit notes accompany matching Windows/source archives.
+- v0.3.0 and all earlier releases remain preserved; this is a defaults/documentation patch, not a claim that performance limits are solved.
+
 # v0.3.0 - Theatre and Creator Studio
 
 - Integrated launcher Theatre library for frozen scenes and observed moving takes.

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "release": "v0.3.1",
+  "sourceCommit": "722879dae8b5dcef3a45f2cfe9cb06acb8e00e54",
+  "sourceArchiveSha256": "c134092f442354df4d86e341c7068ec803b8b441f12b7f1d62e54eed1bcfc8c0",
+  "windowsArchiveSha256": "8209fef0bcd12a3915f85ffd4b0d7f27907fe056d7ef67d8fdb739cece480856",
+  "acceptedGameSha256": "bf8b3fc4401de8704f2dcfe00e9bf8d7f29fe83bbfe201d8d1d865a56c5e1683",
+  "launcherSha256": "1149fb9da34678a8b17b8247943e4c62afe743a3000f1cddf14c6de335daf302",
+  "verification": {
+    "freshExactSourceArchiveExtraction": true,
+    "toolchain": "Visual Studio 18 2026 / MSVC / Win32 Release",
+    "buildCommand": "Build-Source.ps1 -Generator \"Visual Studio 18 2026\" -Parallel 2",
+    "nativeTests": {
+      "total": 125,
+      "passed": 124,
+      "failed": 0,
+      "skipped": 1,
+      "skipReason": "Optional crash-a-like.ttf font is not distributed; native font cache test skips."
+    },
+    "launcherHeadlessChecksPassed": 386,
+    "sourceInventoryRegressionTestsPassed": 8,
+    "allArchivedSourceInputsUnchangedAfterBuild": true,
+    "zipCrcAndAcceptedRuntimeIdentityVerified": true,
+    "privatePathsCredentialsPersonalSettingsAndRetailDataExcluded": true,
+    "gameplayGpuHeadsetOrMotorLaunchPerformed": false,
+    "byteForByteBuildReproducibilityClaimed": false
+  },
+  "acceptance": "Owner accepted the unchanged game runtime and authorized publication; earlier working installations preserved."
+}
