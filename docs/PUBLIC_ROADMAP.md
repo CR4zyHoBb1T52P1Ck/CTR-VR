@@ -1,37 +1,34 @@
-# CTR VR — next workblocks
+# CTR VR - after v0.3.0
 
-Current public baseline: **v0.2.5 Creator Capture & Performance Refinements**.
-Released: VR/native80/90/120 paths with qualified timing, flatscreen gamepad/wheel
-play, Photo/freecam/looks/world grips, loaded-kart viewer with experimental current-
-clip playback, Chase and free/scalable/swappable Gold-or-Classic PiP.144 remains
-experimental; demanding races/recording can still slow. Plans below are not shipped
-features or promised dates.
+Theatre/Creator Studio is now a public milestone: observed race takes, frozen
+scenes, desktop and PC-tracked filming, transport/ranges/bookmarks/shots, clean
+silent MP4s, portrait output, interactive Photo/Viewer tools and REC placement.
+These tools are useful now; they do not imply complete game-state/audio replay.
 
-1. **Custom tracks — priority.** Finish actual native VRAM writer/read ownership,
-   isolated course publication/restart/teardown and save/record routing; validate
-   one authored diagnostic course in flat play, then VR90/120/Photo/OBS/AA. Real
-   background preload and mandatory rooted native preparation are implemented
-   foundations, not a playable loader. XDELTA remains source-specific; no universal
-   checksum bypass or retail content distribution. See the
-   [concrete next workblock](CUSTOM_TRACK_NEXT_WORKBLOCK.md).
-2. **Measured performance and capture polish.** Keep the released baseline,
-   optimize one demonstrated CPU/driver/presentation cost at a time and preserve
-   AA/control/Photo behavior. Broader track/hardware acceptance,144 cadence and
-   Chase obstruction/visibility remain open. No locked-rate guarantee.
-3. **Garage and model showcase.** Fix actual room/actor transforms, projection,
-   per-window presentation and lifetime before claiming stereo character select.
-   Expand loaded-model animation/clip/roster tools only with validated bindings.
-4. **Flat quality of life and motion feasibility.** Bring native-window Photo/
-   freecam/exact PNG preview forward separately; investigate opt-in motion input
-   with explicit tracking/ownership rather than assuming controllers work without
-   a headset. Retain gamepad/wheel fallback and independent profiles.
-5. **Theatre/replay.** Work toward recorded game-state/input playback with creative
-   cameras and screenshots, first one isolated linear race with verified identity,
-   then seeking. It is not already a full-race theatre player.
-6. **Hardware, visuals and multiplayer.** Broader conservative FFB acceptance,
-   Steam Frame PC compatibility preparation, bounded optional texture/material
-   upgrades, and native networking/per-player ownership proofs. No standalone
-   Frame/Quest, DLSS/ray tracing or supported multiplayer claim.
+1. **Measured performance and standalone Frame VR.** Preserve the accepted PC and
+   local Frame flatscreen builds. Optimize demonstrated CPU/render/copy costs,
+   keeping controls, Photo and visual quality intact. Heavy Creator/OBS races and
+   144 Hz remain workload-dependent; standalone VR is too slow for supported play.
+2. **Custom tracks.** Private Lab/Sunken Sprint/recovered-course hosts have made
+   progress with geometry, surface contact, actors and directors. Complete native
+   race gameplay, starts/checkpoints/respawns, boxes/items, animation/audio, sky,
+   eight-racer behavior and safe integration before claiming a public track loader.
+   XDELTA patches remain source-specific; no retail data or universal bypass ships.
+3. **Theatre beyond observed draws.** Improve long-take/render cadence and captured
+   scene coverage, then animated holds, audio and genuine game-state/input replay.
+   Keep the accepted film director, controller ownership and clean export paths.
+4. **Garage and character showcase.** Finish actual room/actor placement, scale,
+   depth and lifetimes; expand validated model/animation/roster coverage. The
+   loaded-kart Photo viewer is not a completed stereo character-select Garage.
+5. **Flatscreen quality of life and Frame distribution.** Keep native gamepad/wheel
+   play and the accepted local Frame theatre-screen entry. Build a portable clean-
+   user installer separately; investigate flat Photo/motion controls with explicit
+   tracking ownership. No automatic headset installation is included in v0.3.0.
+6. **Visual experiments and multiplayer.** Investigate bounded texture/material
+   polish and the inputs required for temporal upscaling; DLSS is not shipped.
+   Multiplayer needs native networking, identity and per-player ownership proofs.
+7. **Wheel hardware acceptance.** Retain conservative optional FFB/progressive
+   pedal groundwork. Broader motor/feel tuning resumes when hardware is available.
 
-Community evidence is reviewed with the project owner. It never automatically
-executes code, changes a release or certifies a hardware configuration.
+Community feedback remains evidence for owner review, not automatic code or
+release instructions. No dates, universal hardware support or fixed-FPS promises.

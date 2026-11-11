@@ -14,10 +14,11 @@ not needed for this extracted-source build.
 From PowerShell in the extracted source root:
 
 ```powershell
-.\Build-Source.ps1 -Generator 'Visual Studio 18 2026'
+.\Build-Source.ps1 -Generator 'Visual Studio 18 2026' -Parallel 2
 # Or use 'Visual Studio 17 2022' with that installed toolchain.
 ```
 
+The build defaults to two compiler jobs; use -Parallel 1 through 16 to adjust.
 The script configures a Win32 Release build and runs native CPU tests, then
 builds/tests the launcher. It does not launch a VR session or edit GPU settings.
 Outputs: `build/Release/CTR-VR.exe` and

@@ -4,31 +4,39 @@ An unofficial Windows native/SteamVR mod for Crash Team Racing: Turbocharged,
 with stereoscopic worlds, configurable driving controls, original-art HUD,
 Photo/freecam and Creator recording tools.
 
-**v0.2.5 — Creator Capture & Performance Refinements** is available. Download the
-[Windows package and complete matching source](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/tag/v0.2.5),
-read the [release notes](docs/RELEASE_v0.2.5.md), [changelog](docs/CHANGELOG_v0.2.5.md)
+**v0.3.0 - Theatre and Creator Studio** is available. Download the
+[Windows package and complete matching source](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/tag/v0.3.0),
+read the [release notes](docs/RELEASE_v0.3.0.md), [Theatre/Photo controls](docs/THEATRE_CONTROLS.md)
 and [launcher guide](docs/DESKTOP_LAUNCHER.md).
 
-New since v0.2.4: **headset-free flatscreen gamepad/wheel play**, four-corner/free
-PiP movement and resize, optional **thin Gold full-image frame**, maintained
-HUD/render/capture refinements and better reviewed diagnostics. Chase now refreshes
-scenery after same-generation world recovery, fixing the observed Cortex issue.
-Record the separate **CTR VR Capture** window in OBS; the headset keeps its camera.
+Record a race take, pause to save it, then open it in the launcher Theatre library.
+Film using free/player cameras, a desktop gamepad or the **head/hand-tracked PC VR
+viewfinder**. Scrub, reverse, mark In/Out, save shots/bookmarks and export clean
+silent **landscape or phone-portrait MP4 clips**, up to 30 minutes within resource
+limits. The takes retain observed draws, not a deterministic game-state simulation;
+audio and unseen objects/effects may be absent. **30 fps is a workload-dependent
+target**, not a locked distinct-frame-rate promise.
 
-Owner-approved corrected Cortex native 120/OBS recording+preview/AA/Gold PiP run
-averaged **94.6% game speed**. Earlier N. Gin/Oxide runs reached **98.0%/96.8%** on
-the preceding Gold build. These are content-specific observations, not a fixed
-FPS gain or all-track guarantee. **90 Hz is the default/reference; native 80/90/120
-have developer testing. 144 Hz remains EXPERIMENTAL.** Follow the
-[refresh guide](docs/FRAME_RATE_GUIDE.md); heavy races/Creator can still slow down.
+This milestone also adds interactive grabbable mod/Photo/Viewer panels, pointer
+and hover explanations, a frozen **REC laser editor** with Kart/Head/World anchors,
+controller-first take recording, portrait Photo/Creator output and three more
+Photo looks. Creator Chase/PiP retains free position/scale, role swap and Gold or
+Classic framing. In OBS record **CTR VR Capture**, not the headset mirror.
 
-[Custom-track implementation is the next priority](docs/PUBLIC_ROADMAP.md).
-The shipped background preload/root checks are foundations: playable custom
-courses, universal XDELTA conversion, multiplayer and theatre are not enabled.
-Earlier releases remain available as rollback.
+**90 Hz is the default/reference. Developer headset testing covers 80/90/120 Hz;
+144 Hz remains EXPERIMENTAL.** Set headset Hz before launch and follow the
+[refresh guide](docs/FRAME_RATE_GUIDE.md). Heavy races, Creator Capture and OBS can
+still cause slowdowns; this release does not claim that all timing issues are fixed.
+Standalone Frame VR also remains experimental and too slow for supported play.
+
+Earlier working releases remain available as rollback. Full custom eight-racer
+tracks, complete Garage, multiplayer and genuine game-state/audio replay remain
+[roadmap work](docs/PUBLIC_ROADMAP.md), separate from the useful Theatre tools now shipped.
 
 ## Play your way
 
+- Theatre library, free/player cameras, tracked head/hand filming, ranges/bookmarks/shots and clean MP4 export.
+- Interactive Photo/Viewer tools, ten looks and wide/portrait PNGs.
 - Stereo Adventure tracks, hubs and supported arenas; tracked native menus, results and supported cutscenes where appropriate.
 - First- or third-person camera, recentering, comfort options and saved layouts.
 - Valve Index thumbstick, hand-position and one/two-handed virtual-wheel driving, calibration, remappable buttons and directional item gestures.
@@ -37,7 +45,19 @@ Earlier releases remain available as rollback.
 - Original-art/text/hidden HUD, 25 grouped widgets and paused placement tools.
 - Player launcher with controls, selective preferences, Support, feature catalog, reviewed changelog, optional reviewed feedback and adjustable rendered homage background.
 
-Chase/PiP output has owner confirmation. Physical coverage is strongest on Windows / Index, G920, Xbox and keyboard, including owner-tested native 120 with OBS/AA and Photo looks. Quest 3 PC/SteamVR compatibility has community reports relayed by the maintainer. Broader Touch/gesture coverage, Quest 3S, Steam Frame, Vive and other hardware profiles remain unverified compatibility paths; no standalone headset build is included. Wheel steering + gesture attacks (multi controller input) defaults to hardware-gated AUTO, including motion-controller button throws. Force feedback and progressive pedal mode remain experimental, optional and OFF by default. Xbox/gamepad and wheel D-pad Up/Down throw items forward/backward by default for new profiles; saved OFF is retained. Toggle gamepad throws under VR Settings > Controllers. The frozen viewer isolates the loaded kart/driver, with experimental current-clip playback for supported models. Full-roster viewing, stereo frontend selection, custom tracks and multiplayer remain future work. See the release notes for limitations, including the earlier intermittent hub stall.
+Chase/PiP, Photo, Theatre, menus and the final REC editor have owner acceptance on
+their tested paths. Developer use covers Windows / Index and Frame PC streaming,
+with gamepad/keyboard and prior G920 coverage. Quest 3 PC/SteamVR compatibility has
+**community reports**, distinct from developer hardware testing. Broader hardware
+and every control combination are not certified. No standalone headset installer
+is included: the maintainer's preserved Frame flatscreen/Proton installation is
+accepted locally, while standalone VR is separate and experimental.
+
+Wheel steering + gesture attacks retains hardware-gated AUTO and saved options;
+gamepad/wheel directional D-pad throws remain available. Force feedback and
+progressive pedals remain experimental, optional and OFF by default, with broad
+wheel/feel acceptance deferred. The loaded kart/driver viewer is distinct from a
+complete 3D Garage. See the release notes for scope and limitations.
 
 ## Install and preserve progress
 
@@ -45,7 +65,7 @@ Use the versioned Windows ZIP in a **new writable folder**, keep all files toget
 
 Index right thumbstick **click** is Start/pause; left thumbstick **click** pauses and opens VR settings. Quick Access has hand calibration, grip-status visibility and Wheel Steering + Gesture Attacks (multi controller input). The launcher Controls page lists tested and untested input paths. Clutch-pedal/button reverse is separate from wheel D-pad weapons. Select other raw SDL wheels under Input Devices; device changes require fresh calibration and mapping. Launcher Appearance is collapsed at the bottom of Customize and ignores mouse-wheel opacity changes. See the [controls reference](docs/RELEASE_v0.1.0.md#essential-controls).
 
-Back up the old folder with the game/launcher closed before updating. Move your own memory cards/settings selectively; keep new binaries, manifests, bindings and default configuration together. Follow the [update/rollback steps](docs/RELEASE_v0.2.5.md#install-preserve-and-build).
+Back up the old folder with the game/launcher closed before updating. Move your own memory cards/settings selectively; keep new binaries, manifests, bindings and default configuration together. Follow the [update/rollback steps](docs/RELEASE_v0.3.0.md#preserve-verify-and-build).
 
 ## Build, credits and feedback
 

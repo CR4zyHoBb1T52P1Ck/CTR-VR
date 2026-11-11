@@ -1,4 +1,4 @@
-# CTR VR v0.2.5 — player and Creator guide
+# CTR VR v0.2.5 â€” player and Creator guide
 
 Unofficial Windows native/SteamVR mod. Supply your own compatible raw NTSC-U disc
 BIN. Read RELEASE-NOTES.md for the full change list and limits. **90 Hz remains the
@@ -89,7 +89,7 @@ Alt+F7 with VR settings closed. Scene/VRAM caching prepares/releases automatical
 The gold-bordered exact 2D preview is the PNG composition reference. P switches
 preview; L changes locked/head-follow. Live tracking, orbit/free movement, FOV,
 head-relative motion, one-grip drag, two-grip scale and group visibility remain.
-Help around the viewfinder stays outside screenshots. Keyboard1–5 toggles scene
+Help around the viewfinder stays outside screenshots. Keyboard1â€“5 toggles scene
 groups; Space or the displayed controller capture button requests a PNG.
 Screenshots save to **game/Captures** in the current installation.
 
@@ -114,7 +114,27 @@ Hz, track/race, capture layout, OBS recording/preview and AA; distinguish music/
 game slowdown from image judder. Missing context is not a zero or a pass.
 
 Quest 3 PC/SteamVR compatibility has community reports relayed by the maintainer;
-broader gesture/controller coverage, Quest 3S, Steam Frame and standalone ports
-are not established. Developer headset tests cover80/90/120. Creator workloads
-still need optimization. Custom tracks, multiplayer and theatre remain gated
-work; no XDELTA source-check bypass or retail data is distributed.
+broader gesture/controller coverage and Quest 3S are not established. Steam Frame
+PC streaming and its private local flatscreen entry have owner tests; standalone
+VR remains experimental and too slow for supported play. Developer headset tests cover80/90/120. Creator workloads
+still need optimization. Custom tracks and multiplayer remain gated work; no XDELTA source-check bypass or retail data is distributed.
+
+
+## Theatre / free camera
+
+Open Theatre in the launcher. Select Desktop director or Tracked VR viewfinder at
+the top, select a scene/take, then Open selected capture. Double-click follows the
+selected mode. Controls guide opens inside the launcher; see Theatre-Controls.md.
+Capture new take launches the live PC VR game; it does not open a saved take.
+After GO, pause > F9 > Theatre > Record take on resume, then resume on controller.
+Pausing saves the take; wait for SAVED. F7 remains an optional keyboard shortcut.
+
+The director provides free/anchored cameras, full-take transport, frame/second
+seeking, In/Out/loop tools, eight saved shots and clean silent local MP4 clips.
+Tracked PC VR uses a gold head/grip camera window, not immersive course geometry.
+30fps is a workload-dependent target. Files retain observed scene draws, not
+deterministic game simulation; audio and unseen effects/objects may be absent.
+
+Release candidate gates remain: tracked Frame Theatre face/D-pad acceptance,
+fresh game/Photo/controller handoff, a complete long-take round trip, and portable
+standalone-flat installation. Read Steam-Frame.md before choosing a Frame mode.
