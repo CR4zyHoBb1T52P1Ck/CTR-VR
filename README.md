@@ -37,6 +37,29 @@ Earlier working releases remain available as rollback. Full custom eight-racer
 tracks, complete Garage, multiplayer and genuine game-state/audio replay remain
 [roadmap work](docs/PUBLIC_ROADMAP.md), separate from the useful Theatre tools now shipped.
 
+## Standalone Steam Frame preview and hardware hiatus
+
+**22 November 2026:** the [last owner-tested standalone Frame build](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/tag/v0.3.2-frame-preview.1)
+is available as an experimental update overlay, with complete matching source.
+Read the [detailed progress/blocker report and personal update](docs/RELEASE_v0.3.2-frame-preview.1.md)
+and [installation/rollback limits](docs/FRAME_PREVIEW_INSTALL.md).
+
+Devon's Frame has stopped charging. Valve support has been contacted; repair/RMA
+is unresolved. **Standalone Frame testing and development are paused indefinitely.**
+This is the last standalone Frame update for the foreseeable future, with apologies
+and thanks to everyone trying, playing and supporting the mod. No return date is
+promised. Other PC/Index acceptance and testable projects may continue separately.
+
+The final Cortex Castle test held a 100% game clock and 71.995 native updates/s,
+but averaged 36.468 submitted world stereo pairs/s at a 72 Hz target. The owner
+reported slightly steadier presentation; **native 72/90/120 Hz standalone VR is
+not achieved**. The preview rejects 64.52% of opaque vertices while preserving
+configured AA/100% eye scale. Later untested batching changes are excluded.
+
+[v0.3.1 remains the stable PC/Index download](https://github.com/CR4zyHoBb1T52P1Ck/CTR-VR/releases/tag/v0.3.1)
+and is unchanged. The preview needs an existing compatible Frame/Proton setup;
+it is not a complete game, native SteamOS port or universal installer.
+
 ## Play your way
 
 - Theatre library, free/player cameras, tracked head/hand filming, ranges/bookmarks/shots and clean MP4 export.

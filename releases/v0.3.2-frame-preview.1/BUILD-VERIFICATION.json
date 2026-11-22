@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "release": "v0.3.2-frame-preview.1",
+  "sourceCommit": "22c8fdfea5728532fd120b3b7da369b18286ae27",
+  "acceptedGameSha256": "c190a0d727f6f9dca2b5f503fe10f850918f6abbc5d51094d7cdec9324f93b4b",
+  "sourceArchiveSha256": "26558cb228eb12805624f4d75f2fb5e2933fcf439bfd47a7c9583761fa2771cb",
+  "overlayArchiveSha256": "105f83fa1d6e054d2c0e92f81e4ba0ef1a95edeb14623cdad51782922728c395",
+  "verification": {
+    "freshExactSourceArchiveExtraction": true,
+    "all3968ArchivedInputsUnchangedAfterBuild": true,
+    "reviewedIntegrationFiles": 1140,
+    "additionalReviewedFrameConditionalInputs": 6,
+    "nativeSourceFiles": 2747,
+    "nativeInputsByteExactToRetainedBuild": true,
+    "nativePatchReverseForwardVerified": true,
+    "selectedCpuSuites": 59,
+    "passed": 59,
+    "failed": 0,
+    "opaqueDrawCpuChecks": 10938,
+    "publicProfileHelperCpuChecks": 136,
+    "actualAcceptedNativeParserVerified": true,
+    "toolchain": "Visual Studio 18 2026 / MSVC / Win32 Release O2/SSE2/IPO-LTCG",
+    "rebuiltEngineSha256": "4e66e697456a1665f05577a689c1180f6d8590702927f9350eb5937f73df3f11",
+    "byteForByteReproducibilityClaimed": false,
+    "publishedRuntimeIsUnchangedOwnerTestedArtifact": true,
+    "zipCrcAndPayloadDigestsVerified": true,
+    "privatePathsCredentialsSettingsSessionsAndRetailDataExcluded": true,
+    "gameplayGpuHeadsetOrSshLaunchPerformed": false
+  },
+  "acceptance": {
+    "lastOwnerTestCompletedThreeCortexCastleLaps": true,
+    "normalNativeShutdown": true,
+    "submissionErrors": 0,
+    "uiCaptureGlErrors": 0,
+    "logicUpdatesHz": 71.995,
+    "clockPercent": 100,
+    "submittedWorldPairsHz": 36.468,
+    "eyeSize": [
+      2064,
+      2064
+    ],
+    "targetHz": 72,
+    "nativeAaMode": 6,
+    "opaqueVertexRejectionPercent": 64.52,
+    "validGpuTimestampSamples": 61,
+    "nativeRefreshQualified": false,
+    "newerBatchCandidateIncluded": false
+  },
+  "hiatus": {
+    "standaloneFrameDevelopmentAndTesting": "paused indefinitely by owner",
+    "reason": "Charging failure; Valve support contacted; repair/RMA unresolved",
+    "resumeDate": null,
+    "otherPcVrWork": "may continue separately when explicitly requested and testable"
+  }
+}

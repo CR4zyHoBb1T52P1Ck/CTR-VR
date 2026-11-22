@@ -1,5 +1,51 @@
 # Changelog
 
+# v0.3.2-frame-preview.1 — 22 November 2026
+
+## Published checkpoint
+
+- Exact owner-tested opaque-culling executable c190a0d7… from source 22c8fdfe….
+- Retained Frame adapter/eye submission compatibility and current shared menu /
+  input foundations, including corrected Frame face buttons and race-only D-pad
+  weapon gates in hubs/menus.
+- Headset-matched raw native clock; interpolation and experimental pose smoothing off.
+- Scoped native/state/HUD/setup reuse, bounded uploads/vertex pooling and optimized
+  O2/SSE2/LTCG build configuration; abandoned scalar/world/texture experiments off.
+- Conservative 64-triangle opaque culling outside both eyes, cached static bounds,
+  refreshed moving bounds and unchanged ordering/depth/material behavior.
+- Startup/progress/final/lifecycle reporting, correlated launch identities,
+  feature counters and sparse paired GPU timestamps; owner-controlled termination.
+- Standalone capture-root handling for Desktop/CTR VR CAPTURES; end-to-end capture
+  acceptance remains limited, with resource/encoding caveats retained.
+- Configured AA and 100% runtime eye scale retained in the primary profile.
+
+## Evidence and limits
+
+- Three Cortex Castle laps completed with clean native shutdown and no recorded
+  Submit/UI capture GL errors; sampled windows report seven CPU opponents.
+- 71.995 native logic updates/s, 100% game clock, 36.468 submitted world pairs/s.
+- 2064-square eyes, 72 Hz, sampled native AA 6; 64.52% opaque vertices rejected.
+- 61 valid retired GPU phase samples. Timing/quality differences prevent claiming
+  a controlled FPS gain over the earlier AA-off comparison.
+- Standalone VR is still below target; native 72/90/120 Hz is not qualified.
+
+## Preserved / excluded
+
+- v0.3.1 stable assets and prior working builds remain unchanged.
+- The later batched-culling candidate was not headset-tested and is not shipped.
+- No finished custom eight-racer race, complete Garage/multiplayer or enabled
+  live per-eye DLSS is claimed or bundled.
+- No game data, personal saves/settings, pairing keys or private session logs.
+
+## Hardware hiatus
+
+The maintainer's Frame no longer charges; Valve support has been contacted, with
+repair/RMA unresolved. Standalone Frame testing and development are paused
+indefinitely. This is the last standalone Frame update for the foreseeable future,
+with apologies and thanks to everyone playing and supporting the project. PC VR /
+Index and other testable work may continue separately; no return date is promised.
+
+
 # v0.3.1 - Final REC placement defaults
 
 - New installations now start with the owner-confirmed Kart-relative REC badge placement, visibility, distance, scale and orientation.

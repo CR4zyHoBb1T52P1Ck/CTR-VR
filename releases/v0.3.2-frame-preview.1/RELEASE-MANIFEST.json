@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "version": "v0.3.2-frame-preview.1",
+  "displayName": "Last Tested Standalone Frame Build and Hardware Hiatus",
+  "sourceCommit": "22c8fdfea5728532fd120b3b7da369b18286ae27",
+  "gameSha256": "c190a0d727f6f9dca2b5f503fe10f850918f6abbc5d51094d7cdec9324f93b4b",
+  "turbochargedBase": "07d0c49f01d62dcb9887b455be27ce65728ee893",
+  "openvrCommit": "0924064316de3effbcd1acf1e309182a2deb1c05",
+  "target": "Experimental Win32 x86 through existing standalone Steam Frame Proton setup",
+  "releaseType": "preview-overlay",
+  "stableFallback": "v0.3.1",
+  "nativeRefreshQualified": false,
+  "gameDataIncluded": false,
+  "personalSavesIncluded": false,
+  "privateLogsIncluded": false,
+  "proprietaryDlssRuntimeIncluded": false,
+  "signature": "unsigned",
+  "sourceBuildEquivalence": "Exact integration and native source inputs supplied; byte-for-byte rebuild reproducibility not claimed",
+  "hardwareTestingStatus": "Owner tested culling build; further standalone development/testing paused for charging failure and unresolved support/RMA",
+  "laterBatchCandidateIncluded": false,
+  "overlayFiles": {
+    "CTR-VR.exe": "c190a0d727f6f9dca2b5f503fe10f850918f6abbc5d51094d7cdec9324f93b4b",
+    "openvr_api.dll": "ab696e4f218a95b3e396bc310f9fe6485df48c99c0969762083212b1e1f025a6",
+    "input/actions.json": "a7fecae4c40ae2ebc8835514ab6e0180b1589b34b8493450b085668072056e0e",
+    "input/bindings_frame.json": "9c3dc44ddaf6e7c24a837464e126cb9672dd6a92713b2fc47c42ab3ea7cee8c2",
+    "input/theatre_actions.json": "116bda668f941f0720fbfbff9a4d555ffcf8141245efce42de66f679d711dfc5",
+    "input/theatre_app.json": "376bae174a94c875c7cfb8a729c005126039090fd0b36a7e3e3196fdea1549cb",
+    "input/theatre_frame.json": "74242647fc72e6bd99b304dcb080113af93020feafe31be85330f9ff88ce7383",
+    "input/theatre_frame_hmd.json": "fdd6f0e22550dc6e3c92b387c6afe451c96dd01482256da766916a3ecb0f3ff4",
+    "input/theatre_index.json": "d79928aa5270c973aca1002ce47ae830643a163b207e70a93e24223dac8e78a0"
+  }
+}

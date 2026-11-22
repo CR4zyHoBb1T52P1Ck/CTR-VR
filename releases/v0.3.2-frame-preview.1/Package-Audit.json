@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "release": "v0.3.2-frame-preview.1",
+  "acceptedGameSha256": "c190a0d727f6f9dca2b5f503fe10f850918f6abbc5d51094d7cdec9324f93b4b",
+  "integrationSourceCommit": "22c8fdfea5728532fd120b3b7da369b18286ae27",
+  "artifactsBeforeAuditAndSums": [
+    {
+      "name": "BUILD-VERIFICATION.json",
+      "sha256": "1f36e5cdf7f64dd54a97226c79cf7fb479891b73c59e7c75a4a84e67e2fabe12",
+      "bytes": 2241
+    },
+    {
+      "name": "CHANGELOG.md",
+      "sha256": "4558542c058c80d5f62b2461a2504efcc7810c5fdf6b23ce2601785c9dfc8269",
+      "bytes": 2551
+    },
+    {
+      "name": "CREDITS-AND-LICENSES.md",
+      "sha256": "071df5e332cd4f98c1990741a6f15e787c8873d80e90b21bb9fdeb3bd07656fc",
+      "bytes": 3651
+    },
+    {
+      "name": "ctr-vr-v0.3.2-frame-preview.1-frame-overlay.zip",
+      "sha256": "105f83fa1d6e054d2c0e92f81e4ba0ef1a95edeb14623cdad51782922728c395",
+      "bytes": 2656340
+    },
+    {
+      "name": "ctr-vr-v0.3.2-frame-preview.1-source.zip",
+      "sha256": "26558cb228eb12805624f4d75f2fb5e2933fcf439bfd47a7c9583761fa2771cb",
+      "bytes": 51702127
+    },
+    {
+      "name": "INSTALL-FRAME.md",
+      "sha256": "e6ae91987dca2fddae8b09b7e6a451c44c018ebcd401c7157eea689ea7d29a69",
+      "bytes": 4890
+    },
+    {
+      "name": "RELEASE-MANIFEST.json",
+      "sha256": "e4c8a62cf4233f5a849d3c171971eeb91913ddb59327acae98ab5e648c0533c4",
+      "bytes": 2027
+    },
+    {
+      "name": "RELEASE-NOTES.md",
+      "sha256": "c7a03bcf3066c3e467f5df06fe142d02c430a6f1a48064f809781fbd2754f96e",
+      "bytes": 20862
+    }
+  ],
+  "sourceFiles": 3968,
+  "overlayFiles": 21,
+  "zipCrcVerified": true,
+  "privateMaterialExcluded": true,
+  "retailDataIncluded": false,
+  "proprietaryDlssRuntimeIncluded": false,
+  "sourceAndReadOnlyHelperVerification": true,
+  "stableV031Preserved": true,
+  "publicationState": "qualified before publication"
+}
